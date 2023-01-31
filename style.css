@@ -196,3 +196,39 @@ h1{
 .footer-area h3{
     text-align: center;
 }
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  header{
+    padding:5%;
+  }
+   body {
+      background-color: ;
+   }
+   
+   .container{
+     width: 98%;
+     margin: auto;
+     
+   }
+   
+   h1{
+     font-size: 18px;
+     padding-bottom: 5px
+   }
+   
+   .span{
+     margin-top:20px;
+     font-size: 2.5em
+    
+   }
+   
+   .quote{
+     width: 95%
+   }
+   
+   .projects{
+     margin-top: 
+   }
+}
