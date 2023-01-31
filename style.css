@@ -134,7 +134,7 @@ h1{
    background-color: black;
    color: white;
   padding: 3em;
-   line-height: 4em;
+   
    height: 15em;
 }
 
@@ -230,5 +230,39 @@ h1{
    
    .projects{
      margin-top: 
+   }
+   
+   .contact{
+   
+     width:95%;
+     margin: auto
+     text-align:center;
+   }
+   
+   .contact h3{
+     width:95%;
+     margin: auto
+   }
+   
+   .sendEMAIL{
+     width:50%;
+     margin-left: 2em
+   }
+   
+   .projects-display{
+     width:95%
+   }
+   
+   .project-card{
+     padding:2em 1em;
+     line-height: .5em
+     height:5em;
+     
+     
+   }
+   .smaller-h3{
+     margin-top: 3em
+     font-size: 5px
+     color:red;
    }
 }
