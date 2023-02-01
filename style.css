@@ -283,7 +283,7 @@ h3 {
 
 /* projects page  */
 
-.project-list{
+.project-lists{
     width: 100%;
     margin: auto;
     display: grid;
@@ -380,4 +380,73 @@ h3 {
         font-size: 5px;
         color: red;
     }
+  header{
+    padding:5%;
+  }
+   body {
+      background-color: ;
+   }
+   
+   .container{
+     width: 98%;
+     margin: auto;
+     
+   }
+   
+   h1{
+     font-size: 18px;
+     padding-bottom: 5px
+   }
+   
+   .span{
+     margin-top:20px;
+     font-size: 2.5em
+    
+   }
+   
+   .quote{
+     width: 95%
+   }
+   
+   .projects{
+     margin-top: 
+   }
+   
+   .contact{
+   
+     width:95%;
+     margin: auto
+     text-align:center;
+   }
+   
+   .contact h3{
+     width:95%;
+     margin: auto
+   }
+   
+   .sendEMAIL{
+     width:50%;
+     margin-left: 2em
+   }
+   
+   .projects-display{
+     width:95%
+   }
+   
+   .project-card{
+     padding:2em 1em;
+     line-height: .5em
+     height:5em;
+     
+     
+   }
+   .smaller-h3{
+     margin-top: 3em
+     font-size: 5px
+     color:red;
+   }
+   
+   .navbar{
+     width:80%;
+   }
 }
