@@ -2,24 +2,34 @@
 
 :root {
     --bacground-white: #FCFCFC;
-    --blue:#256EFF;
+    --blue: #256EFF;
 }
 
 /* General styling */
+
+.normal {
+
+    width: 94%;
+    margin: auto;
+    margin-top: 5em;
+}
+
+
 /* buttons */
-button{
+button {
     background: none;
     outline: none;
     border: none;
-   
+
 }
+
 /* colored text */
-.colored{
-    color:var(--blue)
+.colored {
+    color: var(--blue)
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,138 +38,148 @@ button{
 body {
     background-color: var(--bacground-white);
     margin: auto;
-  
+
     width: 100%;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
 
-header{
+header {
     width: 100%;
-    padding:2% 10%;
+    padding: 2% 10%;
     position: fixed;
     top: 0;
     font-weight: bold;
     display: flex;
-    
+
     justify-content: space-between;
 
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.37);
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-z-index: 1;
-    
+    background: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1;
+
 }
-.logo h3{
+
+.logo h3 {
     text-transform: uppercase;
     font-weight: bold;
 }
 
 /* 0------------- Navbar styling ---------------- */
-.navbar{
+.navbar {
     position: absolute;
-   padding: 3em;
+    padding: 3em;
     background-color: black;
     width: 25%;
     right: 0em;
     top: .5em;
     height: 70vh;
-   display: none;
+    display: none;
     z-index: 99999999999;
 }
 
-button{
+button {
     cursor: pointer;
     color: black;
 }
 
-.cancel-btn{
+.cancel-btn {
 
     color: white;
     font-size: 1.5em;
-   position: absolute;
-   right: .5em;
-   top: .5em;
+    position: absolute;
+    right: .5em;
+    top: .5em;
 }
 
-.navbar a{
+.navbar a {
     color: white;
 }
 
-.navbar ul li a{
-   font-size: 1em;
-   color: white;
-   line-height: 3em;
-   font-weight: 100;
-   letter-spacing: ;
-   
-  
+.navbar ul li a {
+    font-size: 1em;
+    color: white;
+    line-height: 3em;
+    font-weight: 100;
+    letter-spacing: ;
+
+
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     padding-left: 1em;
-    
-   
+
+
 }
 
 
-.social-links{
-  display: flex;
-  align-items:baseline;
-  width: 50%;
-  margin: auto;
-  margin-top: 7em;
-  justify-content: space-between;
+.social-links {
+    display: flex;
+    align-items: baseline;
+    width: 50%;
+    margin: auto;
+    margin-top: 7em;
+    justify-content: space-between;
 }
 
-.social-links a{
+.social-links a {
     font-size: 18px;
 }
+
 main {
     position: relative;
     margin-top: 10em;
 }
 
 /* GWNWREAL STYLING */
-.container{
-    width:80%;
+.container {
+    width: 80%;
     margin: auto;
 }
 
-a{
+.wrapper{
+    width: 98%;
+    margin: auto;
+    
+}
+
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
     font-weight: bold;
 }
 
-.underline{
- text-decoration: underline;   
+.underline {
+    text-decoration: underline;
 }
 
-.development{
+.development {
     cursor: not-allowed;
     pointer-events: none;
 }
 
-h1{
-    font-size:2em ;
+h1 {
+    font-size: 2em;
     letter-spacing: 1px;
-   
+
 }
-.span{
+
+.span {
     color: white;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     font-size: 6.8em;
 }
 
-.quote{
+.quote {
     width: 80%;
     margin: auto;
     margin-top: 6em;
 }
 
-.quote h3{
+.quote h3 {
     text-align: center;
     font-weight: 100;
     font-size: 18px;
@@ -170,19 +190,20 @@ h1{
 /* -------------PROJECTS SECTION -------------- */
 
 
-.projects{
+.projects {
     margin-top: 20em;
 }
 
-.projects h1{
+.projects h1 {
     font-size: 2em;
 
 }
 
- h3{
+h3 {
     font-weight: 100;
 }
-.projects-display{
+
+.projects-display {
     width: 80%;
     margin: auto;
     margin-top: 5em;
@@ -190,28 +211,28 @@ h1{
 
 }
 
-.project-list{
+.project-list {
     margin-bottom: 5em;
 }
 
-.project-card{
-   background-color: black;
-   color: white;
-  padding: 3em;
-   
-   height: 15em;
+.project-card {
+    background-color: black;
+    color: white;
+    padding: 3em;
+
+    height: 15em;
 }
 
 /* --------------  Signifies projects that are still in developent*/
-.project-card p{
+.project-card p {
     color: #00FF00;
     text-align: right;
 }
 
 
 /* ----------  CampusHome project ----------- */
-#campusHome{
-    font-family:'CS Harley', sans-serif;
+.campusHome {
+    font-family: 'CS Harley', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -219,7 +240,7 @@ h1{
 
 /* -----flex links ------------ */
 
-.flex-link{
+.flex-link {
     width: 80%;
     margin: auto;
     display: flex;
@@ -230,103 +251,133 @@ h1{
 
 
 /* ------------CONTACT SECTION--------------- */
-.contact{
+.contact {
     margin-top: 10em;
     margin-bottom: 10em;
 }
 
-.contact h2{
+.contact h2 {
     font-size: 2em;
     text-transform: capitalize;
 }
 
-.contact h3{
+.contact h3 {
     width: 50%;
     font-size: 18px;
     padding-top: 2em;
 }
 
-.sendEMAIL{
+.sendEMAIL {
     width: 20%;
     border: 1px solid black;
     padding: 1em;
     margin-top: 3em;
 }
 
-.footer-area{
+.footer-area {}
 
-}
-
-.footer-area h3{
+.footer-area h3 {
     text-align: center;
 }
 
 
+/* projects page  */
+
+.project-list{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top:6em;
+}
+
+.project{
+    width: 100%;
+    margin-bottom: 4em;
+    text-align: center;
+    
+    
+    
+}
+
+.project p{
+    padding-top: 2em;
+    text-align: center;
+    
+}
+
+
+
+.color{
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
 /* Mobile styles */
 @media (max-width: 767px) {
-  header{
-    padding:5%;
-  }
-   body {
-      background-color: ;
-   }
-   
-   .container{
-     width: 98%;
-     margin: auto;
-     
-   }
-   
-   h1{
-     font-size: 18px;
-     padding-bottom: 5px
-   }
-   
-   .span{
-     margin-top:20px;
-     font-size: 2.5em
-    
-   }
-   
-   .quote{
-     width: 95%
-   }
-   
-   .projects{
-     margin-top: 
-   }
-   
-   .contact{
-   
-     width:95%;
-     margin: auto
-     text-align:center;
-   }
-   
-   .contact h3{
-     width:95%;
-     margin: auto
-   }
-   
-   .sendEMAIL{
-     width:50%;
-     margin-left: 2em
-   }
-   
-   .projects-display{
-     width:95%
-   }
-   
-   .project-card{
-     padding:2em 1em;
-     line-height: .5em
-     height:5em;
-     
-     
-   }
-   .smaller-h3{
-     margin-top: 3em
-     font-size: 5px
-     color:red;
-   }
+    header {
+        padding: 5%;
+    }
+
+    body {
+        background-color: ;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    h1 {
+        font-size: 18px;
+        padding-bottom: 5px
+    }
+
+    .span {
+        margin-top: 20px;
+        font-size: 2.5em
+    }
+
+    .quote {
+        width: 95%
+    }
+
+    .projects {
+        margin-top:
+    }
+
+    .contact {
+
+        width: 95%;
+        margin: auto text-align:center;
+    }
+
+    .contact h3 {
+        width: 95%;
+        margin: auto
+    }
+
+    .sendEMAIL {
+        width: 50%;
+        margin-left: 2em
+    }
+
+    .projects-display {
+        width: 95%
+    }
+
+    .project-card {
+        padding: 2em 1em;
+        line-height: .5em;
+        height: 5em;
+
+
+    }
+
+    .smaller-h3 {
+        margin-top: 3em;
+        font-size: 5px;
+        color: red;
+    }
 }
