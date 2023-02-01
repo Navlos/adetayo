@@ -329,4 +329,8 @@ h1{
      font-size: 5px
      color:red;
    }
+   
+   .navbar{
+     width:80%;
+   }
 }
