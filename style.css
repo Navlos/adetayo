@@ -6,7 +6,13 @@
 }
 
 /* General styling */
-
+/* buttons */
+button{
+    background: none;
+    outline: none;
+    border: none;
+   
+}
 /* colored text */
 .colored{
     color:var(--blue)
@@ -50,8 +56,66 @@ z-index: 1;
     font-weight: bold;
 }
 
+/* 0------------- Navbar styling ---------------- */
+.navbar{
+    position: absolute;
+   padding: 3em;
+    background-color: black;
+    width: 25%;
+    right: 0em;
+    top: .5em;
+    height: 70vh;
+   display: none;
+    z-index: 99999999999;
+}
+
+button{
+    cursor: pointer;
+    color: black;
+}
+
+.cancel-btn{
+
+    color: white;
+    font-size: 1.5em;
+   position: absolute;
+   right: .5em;
+   top: .5em;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar ul li a{
+   font-size: 1em;
+   color: white;
+   line-height: 3em;
+   font-weight: 100;
+   letter-spacing: ;
+   
+  
+}
+
+.navbar ul li a:hover{
+    padding-left: 1em;
+    
+   
+}
 
 
+.social-links{
+  display: flex;
+  align-items:baseline;
+  width: 50%;
+  margin: auto;
+  margin-top: 7em;
+  justify-content: space-between;
+}
+
+.social-links a{
+    font-size: 18px;
+}
 main {
     position: relative;
     margin-top: 10em;

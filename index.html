@@ -45,18 +45,7 @@
 
     <!-- -----------------------FONTAWESOME  --------------------------- -->
     <!-- Add this line in the head section of your HTML document -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-t8HEPKODJmF1LZ8NfnmCdbmN/7Vj75eNyLk2Q9qxjK3q/SGwIshY1v/0rOPGgfQTcW06L8t0z9xBp0LKmVRw=="
-      crossorigin="anonymous"
-    />
-
-    <link
-      href="fontawesomefree/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- ------------------------------CSS ------------------------ -->
     <link rel="stylesheet" href="style.css" />
@@ -79,10 +68,36 @@
         </h3>
       </div>
       <h3>
-        <span class="colored"
-          >MENU
+        <span style="cursor:pointer" onclick="openNav()">MENU &#9776;</span>
 
       </h3>
+
+      <nav class="navbar" id="myNav">
+        <a href="javascript:void(0)" class="closebtn cancel-btn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li>
+            <a href="">01 - Projects</a>
+          </li>
+          <li>
+            <a href="">02 - Playground</a>
+          </li>
+          <li>
+            <a href="">03 - Blog</a>
+          </li>
+          <li>
+            <a href="">04 - Download Resume</a>
+          </li>
+        </ul>
+
+        <div class="social-links">
+          
+          <a href=""><i class="fa fa-regular fa-envelope"></i></a>
+          <a href=""><i class="fa fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa fa-brands fa-instagram"></i></a>
+          
+        </div>
+      </nav>
     </header>
 
     <!-- -------------MAIN CONTENT=------------------ -->
@@ -153,7 +168,7 @@
             <h3>You have a project you want to work on? Feel free to send a message,Or you probably want to say hello, Shoot please.</h3>
 
            <div class="sendEMAIL">
-            <i class="fa-solid fa-envelope"></i> <a href="mailto:adetunjitayo2019@gmail.com">Send a message</a>
+            <i class="fa fa-solid fa-envelope"></i> <a href="mailto:adetunjitayo2019@gmail.com"> Send a message</a>
            </div>
         </section>
       </div>
@@ -163,5 +178,18 @@
             <h3>copyright &copy 2023 Adetayo</h3>
         </div>
     </footer>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.display= "none";
+      }
+
+
+      
+      
+    </script>
   </body>
 </html>
