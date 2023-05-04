@@ -364,6 +364,10 @@ h3 {
       margin: auto;
         margin-top:15%;
     }
+    
+    .projects h1{
+      font-size: 1.5rem;
+    }
 
     .contact {
 
