@@ -1,33 +1,59 @@
+
+/* ___________CDN fonts ___________*/
+
 @import url('http://fonts.cdnfonts.com/css/cs-harley');
+@import url('https://fonts.cdnfonts.com/css/aspace');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+                
 
 :root {
-    --bacground-white: #FCFCFC;
-    --blue: #256EFF;
+    --bacground-white:EAECEE;
+    --blue:#192123;
 }
 
+
+/* _______________preloader__________*/
 #preloader {
+  z-index:9999999;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  z-index: 9999;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'a•space', sans-serif;
+}
+
+.preloader-text{
+  margin-top: -3em;
+  padding: .2em;
+  font-size: 3em;
+}
+
+.countdown {
+  font-family: 'a•space', sans-serif;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 3.5em;
+  left: 35%;
+  font-size: 30px;
+ 
 }
 
 
 
-/* General styling */
+/* __________General styling _________*/
 
-.normal {
-
-    width: 94%;
-    margin: auto;
-    margin-top: 5em;
+.styled-btn{
+  border: 1px solid black;
+  padding:.5em 1em;
 }
 
 
-/* buttons */
+/* _____________ buttons ___________ */
 button {
     background: none;
     outline: none;
@@ -35,7 +61,7 @@ button {
 
 }
 
-/* colored text */
+/* ____________colored text__________ */
 .colored {
     color: var(--blue)
 }
@@ -49,12 +75,10 @@ button {
 
 body {
     background-color: var(--bacground-white);
-    margin: auto;
-
-    width: 100%;
-    font-family: 'Kumbh Sans', sans-serif;
+        font-family: 'Kumbh Sans', sans-serif;
 }
 
+/*__________header styling ___________*/
 
 header {
     width: 100%;
@@ -63,38 +87,47 @@ header {
     top: 0;
     font-weight: bold;
     display: flex;
-
     justify-content: space-between;
-
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.37);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     z-index: 1;
 
 }
-
-.logo h3 {
-    text-transform: uppercase;
-    font-weight: bold;
+.header-text{
+  display:flex;
+}
+.header-text h3 {
+  font-size:12px;
+  font-weight: light
+}
+ #dot{
+ font-size:;
 }
 
-/* 0------------- Navbar styling ---------------- */
+/* __________ Navbar styling ________*/
+
 .navbar {
     position: absolute;
     padding: 3em;
-    background-color: black;
-    width: 25%;
+    background-color:#192123;
+    width: 100%;
     right: 0em;
     top: .5em;
-    height: 70vh;
+    height: 90vh;
     display: none;
     z-index: 99999999999;
+    font-family: 'a•space', sans-serif;
 }
 
 button {
     cursor: pointer;
     color: black;
+}
+
+.menu-text{
+  font-family: 'a•space', sans-serif;
+  font-size: 1em;
 }
 
 .cancel-btn {
@@ -115,7 +148,7 @@ button {
     color: white;
     line-height: 3em;
     font-weight: 100;
-    letter-spacing: ;
+   
 
 
 }
@@ -142,10 +175,10 @@ button {
 
 main {
     position: relative;
-    margin-top: 10em;
+    margin-top:8em;
 }
 
-/* GWNWREAL STYLING */
+/* __________General styling__________*/
 .container {
     width: 80%;
     margin: auto;
@@ -168,38 +201,54 @@ a {
     text-decoration: underline;
 }
 
+/* ______signifies project that are still in development ________*/
+
 .development {
     cursor: not-allowed;
     pointer-events: none;
 }
 
+/* _______ General styling ends ______*/
+
+.hero-text{
+ font-family: 'a•space', sans-serif;
+  letter-spacing: 1px;
+ font-weight: lighter;
+  font-size:2.5em;
+
+}
 h1 {
     font-size: 2em;
     letter-spacing: 1px;
 
 }
 
-.span {
-    color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    font-size: 6.8em;
-}
-
+ 
 .quote {
     width: 80%;
     margin: auto;
-    margin-top: 6em;
+    margin-top:2em;
+    margin-bottom: 3em;
+    
 }
 
 .quote h3 {
     text-align: center;
     font-weight: 100;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+                                                
+}
+
+.footer-area{
+  
+  margin-top:9em;
+  text-align: center;
 }
 
 
 
-/* -------------PROJECTS SECTION -------------- */
+/* __________project section _________*/
 
 
 .projects {
@@ -235,7 +284,6 @@ h3 {
     height: 15em;
 }
 
-/* --------------  Signifies projects that are still in developent*/
 .project-card p {
     color: #00FF00;
     text-align: right;
@@ -251,7 +299,7 @@ h3 {
 
 
 
-/* -----flex links ------------ */
+/* _________flex links ___________ */
 
 .flex-link {
     width: 80%;
@@ -263,7 +311,8 @@ h3 {
 
 
 
-/* ------------CONTACT SECTION--------------- */
+/* ________CONTACT SECTION _________ */
+
 .contact {
     margin-top: 10em;
     margin-bottom: 10em;
@@ -295,7 +344,7 @@ h3 {
 }
 
 
-/* projects page  */
+/* __________ projects page ________ */
 
 .project-lists{
     width: 100%;
@@ -327,7 +376,13 @@ h3 {
     color: white;
     padding: .5em;
 }
-/* Mobile styles */
+
+
+
+
+
+
+/* _________ Mobile styles __________ */
 @media (max-width: 767px) {
     header {
         padding: 5%;
